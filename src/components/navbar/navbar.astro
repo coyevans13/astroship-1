@@ -6,14 +6,13 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Learn & Earn",
-    path: "#",
+    title: "Learn",
+    path: "/blog",
     children: [
-      { title: "User Profiles", path: "/" },
-      { title: "Conscious Creator", path: "#" },
-      { title: "WKT/CST Token", path: "#" },
-      { title: "Mining", path: "/404" },
-      { title: "CST Marketplace", path: "/404" },
+      { title: "Welcome to Woke App", path: "/blog/welcome" },
+      { title: "Conscious Creator", path: "/blog/conscious" },
+      { title: "WKT/CST Token", path: "/blog/wkt" },
+      { title: "CST Marketplace", path: "/blog/marketplace" },
     ],
   },
   {
@@ -30,10 +29,6 @@ const menuitems = [
     children: [
       { title: "Community Polls", path: "#" },
   ]
-  },
-  {
-    title: "CST Marketplace",
-    path: "/blog",
   },
   {
     title: "About",
@@ -86,14 +81,14 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" size="md" block>Stay Woke</Link>
+          <Link href="#" size="md" block>Woke App</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
         <a href="#"></a>
-        <Link href="#" size="md">Stay Woke</Link>
+        <Link href="#" size="md">Woke App</Link>
       </div>
     </div>
   </header>

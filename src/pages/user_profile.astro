@@ -1,0 +1,38 @@
+---
+// Import necessary libraries or data here
+let img = '/path-to-your-image/hero.jpg';  // Adjust the path as necessary
+---
+
+<header class="relative">
+  <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+  <div class="mx-auto">
+    <div class="relative shadow-xl sm:overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          class="h-full w-full object-cover"
+          src={img}
+          alt="Coffee grinder"
+        />
+        <div class="absolute inset-0 bg-orange-100 mix-blend-multiply"></div>
+      </div>
+      <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+        <p class="relative left-0 right-0 mx-auto mt-5 max-w-xl text-center text-xl  font-semibold uppercase tracking-wide text-orange-600">
+          The Coffee House
+        </p>
+        <h1 class="mt-1 text-center font-bold uppercase text-gray-900 sm:text-5xl sm:tracking-tight lg:text-7xl">
+          <span class="block text-white">Life is better with</span>
+          <span class="block text-orange-500">coffee</span>
+        </h1>
+
+        <div class="mx-auto mt-10 max-w-xs sm:flex sm:max-w-none sm:justify-center">
+          <button
+            class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-orange-600 shadow-sm hover:bg-orange-100 sm:px-8"
+            @click={Astro.fetchContent('path-to-your-handler')}  <!-- Adjust the handler as necessary -->
+          >
+            Shop coffees
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
